@@ -11,6 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 /* *
   ***NAV SECTION***
 * */
@@ -36,11 +37,96 @@ code {
   align-items: center;
 }
 
+.card--details {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .card-stats {
   display: flex;
   align-items: center;
 }
 
 .card--img {
-  
+  width: 20rem;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.star--rating {
+  width: 10%;
+}
+
+@media all and (max-width: 390px) {
+  .nav--bar {
+    background-color: #000;
+    transition: 1s;
+  }
+
+  .nav-logo {
+    width: 10rem;
+  }
+
+  .cards {
+    display: block;
+    text-align: center;
+    max-width: fit-content;
+  }
+
+  .card-stats {
+    margin-left: 7rem;
+  }
+
+  .star--rating {
+    width: 8%;
+  }
+
+  .rating {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .review-count {
+    margin: 5px;
+    color: #808080;
+  }
+
+  .location--card {
+    color: #808080;
+  }
+
+  .card--badge {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+
+}
+
+@media all and (max-width: 820px) {
+  .nav--bar {
+    background-color: #000;
+    transition: 1s;
+  }
+
+  .nav-logo {
+    width: 10rem;
+  }
+
+  .cards {
+    display: block;
+  }
+
 }
